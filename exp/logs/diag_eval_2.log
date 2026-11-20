@@ -1,0 +1,28 @@
+nohup: ignoring input
+Setup environment for CUDA
+Traceback (most recent call last):
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 331, in <module>
+    main()
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 154, in main
+    config_path = args.checkpoint.parents[3] / "code/hydra/config.yaml"
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/pathlib.py", line 530, in __getitem__
+    raise IndexError(idx)
+IndexError: 3
+Setup environment for CUDA
+Traceback (most recent call last):
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 331, in <module>
+    main()
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 154, in main
+    config_path = args.checkpoint.parents[3] / "code/hydra/config.yaml"
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/pathlib.py", line 530, in __getitem__
+    raise IndexError(idx)
+IndexError: 3
+Setup environment for CUDA
+Traceback (most recent call last):
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 331, in <module>
+    main()
+  File "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/scripts/evaluation/evaluate_drivor_steer.py", line 154, in main
+    config_path = args.checkpoint.parents[3] / "code/hydra/config.yaml"
+  File "/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/pathlib.py", line 530, in __getitem__
+    raise IndexError(idx)
+IndexError: 3

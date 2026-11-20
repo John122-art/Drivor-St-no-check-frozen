@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "full_navtest": true,
+  "expected_scenes": 12146,
+  "successful_scenes": 12146,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.9897085460233822,
+    "drivable_area_compliance": 0.9837806685328503,
+    "ego_progress": 0.9008512910382432,
+    "time_to_collision_within_bound": 0.9617981228387946,
+    "comfort": 0.9999176683681871,
+    "driving_direction_compliance": 0.9732422196607937,
+    "score": 0.9318769854422998
+  },
+  "pdms_percent": 93.18769854422997,
+  "checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_capatch_vitb_8gpu_b16_12ep/11.13_05.07/lightning_logs/version_0/checkpoints/best-epoch=10-step=8866.ckpt",
+  "batch_size": 26,
+  "text_mode": "correct",
+  "ca_on_registers": false,
+  "peak_allocated_bytes": 18102140928,
+  "note": "Only a complete full_navtest run is a full-set result."
+}

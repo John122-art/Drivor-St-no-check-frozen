@@ -1,0 +1,92 @@
+{
+  "init_lang": {
+    "drivor": "not loaded (from scratch: DINOv2 + new LoRA + random registers, neck and decoders)",
+    "steer": {
+      "path": "/mnt/zhaozc_workspace/project/LQH/SteerViT_checkpoint/steervit_dinov2_base.pth",
+      "ca_layers": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "ca_tensors": 36,
+      "connector_tensors": 4,
+      "seg_head_tensors": 2,
+      "ignored": [
+        "textPE.weight"
+      ],
+      "other_trunk_keys_skipped": 0,
+      "tanh_gates": {
+        "1": 0.010410514660179615,
+        "3": -0.012932402081787586,
+        "5": 0.03133238106966019,
+        "7": -0.10656863451004028,
+        "9": 0.2788444757461548,
+        "11": -0.49224019050598145
+      }
+    },
+    "ca_on_registers": false,
+    "grid_mask": false
+  },
+  "init_base": {
+    "drivor": "not loaded (from scratch: DINOv2 + new LoRA + random registers, neck and decoders)",
+    "grid_mask": false
+  },
+  "checks": {
+    "shared_init": {
+      "base_tensors": 466,
+      "different": [],
+      "lang_extra": 43,
+      "lang_extra_all_steer": true
+    },
+    "lora_b_zero": {
+      "tensors": 24,
+      "max_abs": 0.0
+    },
+    "steervit_loaded": {
+      "mismatched": []
+    },
+    "grid_mask": {
+      "lang": false,
+      "base": false
+    },
+    "empty_text_equals_base": {
+      "registers": 0.0,
+      "proposals": 0.0,
+      "pdm_score": 0.0,
+      "trajectory": 0.0
+    },
+    "text_routing": {
+      "text_row_changed": 4.330314636230469,
+      "other_rows_max_diff": 0.0,
+      "ca_query_tokens": [
+        3937,
+        3937,
+        3937,
+        3937,
+        3937,
+        3937
+      ]
+    },
+    "optimizer_groups": {
+      "drivor": {
+        "lr": 0.000282842712474619,
+        "params": 18457214
+      },
+      "steer": {
+        "lr": 2.3e-05,
+        "params": 23080455
+      }
+    },
+    "optimizer_groups_base": {
+      "drivor": {
+        "lr": 0.000282842712474619,
+        "params": 18457214
+      }
+    }
+  },
+  "failures": [],
+  "passed": true
+}

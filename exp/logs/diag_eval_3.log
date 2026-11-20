@@ -1,0 +1,147 @@
+nohup: ignoring input
+Setup environment for CUDA
+Reading saved training config: exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   2%|▏         | 3/136 [00:00<00:05, 25.33it/s]Loading logs:   4%|▍         | 6/136 [00:00<00:06, 19.09it/s]Loading logs:   7%|▋         | 9/136 [00:00<00:06, 18.88it/s]Loading logs:   8%|▊         | 11/136 [00:00<00:08, 15.53it/s]Loading logs:  10%|▉         | 13/136 [00:00<00:08, 15.03it/s]Loading logs:  11%|█         | 15/136 [00:00<00:07, 15.43it/s]Loading logs:  13%|█▎        | 18/136 [00:01<00:06, 17.57it/s]Loading logs:  16%|█▌        | 22/136 [00:01<00:05, 22.38it/s]Loading logs:  19%|█▉        | 26/136 [00:01<00:04, 22.90it/s]Loading logs:  21%|██▏       | 29/136 [00:01<00:04, 22.18it/s]Loading logs:  24%|██▎       | 32/136 [00:01<00:04, 21.76it/s]Loading logs:  26%|██▌       | 35/136 [00:01<00:04, 21.44it/s]Loading logs:  28%|██▊       | 38/136 [00:01<00:05, 17.79it/s]Loading logs:  29%|██▉       | 40/136 [00:02<00:05, 18.07it/s]Loading logs:  31%|███       | 42/136 [00:02<00:05, 18.06it/s]Loading logs:  33%|███▎      | 45/136 [00:02<00:04, 19.83it/s]Loading logs:  36%|███▌      | 49/136 [00:02<00:03, 22.81it/s]Loading logs:  38%|███▊      | 52/136 [00:02<00:04, 17.96it/s]Loading logs:  40%|████      | 55/136 [00:02<00:04, 19.66it/s]Loading logs:  43%|████▎     | 58/136 [00:02<00:03, 21.13it/s]Loading logs:  45%|████▍     | 61/136 [00:03<00:03, 21.50it/s]Loading logs:  47%|████▋     | 64/136 [00:03<00:03, 22.21it/s]Loading logs:  49%|████▉     | 67/136 [00:03<00:04, 16.17it/s]Loading logs:  51%|█████▏    | 70/136 [00:03<00:03, 17.85it/s]Loading logs:  54%|█████▎    | 73/136 [00:03<00:03, 17.70it/s]Loading logs:  56%|█████▌    | 76/136 [00:03<00:03, 18.68it/s]Loading logs:  59%|█████▉    | 80/136 [00:04<00:02, 19.57it/s]Loading logs:  61%|██████    | 83/136 [00:04<00:03, 15.03it/s]Loading logs:  63%|██████▎   | 86/136 [00:04<00:03, 15.26it/s]Loading logs:  65%|██████▌   | 89/136 [00:04<00:02, 17.03it/s]Loading logs:  68%|██████▊   | 93/136 [00:04<00:02, 20.77it/s]Loading logs:  71%|███████   | 96/136 [00:04<00:01, 22.47it/s]Loading logs:  73%|███████▎  | 99/136 [00:05<00:01, 19.79it/s]Loading logs:  75%|███████▌  | 102/136 [00:05<00:02, 13.04it/s]Loading logs:  77%|███████▋  | 105/136 [00:05<00:02, 15.37it/s]Loading logs:  79%|███████▉  | 108/136 [00:05<00:01, 17.07it/s]Loading logs:  82%|████████▏ | 112/136 [00:05<00:01, 21.30it/s]Loading logs:  85%|████████▍ | 115/136 [00:06<00:00, 21.26it/s]Loading logs:  87%|████████▋ | 118/136 [00:06<00:00, 22.92it/s]Loading logs:  89%|████████▉ | 121/136 [00:06<00:01, 13.56it/s]Loading logs:  91%|█████████ | 124/136 [00:06<00:00, 14.75it/s]Loading logs:  93%|█████████▎| 126/136 [00:07<00:01,  8.29it/s]Loading logs:  94%|█████████▍| 128/136 [00:07<00:00,  8.81it/s]Loading logs:  98%|█████████▊| 133/136 [00:07<00:00, 13.40it/s]Loading logs:  99%|█████████▉| 135/136 [00:08<00:00, 10.75it/s]Loading logs: 100%|██████████| 136/136 [00:08<00:00, 16.69it/s]
+Inputs PASS: 1000/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_steer_navtest_correct_1gpu_b3_20261112T082219
+loading  timm/vit_base_patch14_dinov2.lvd142m
+/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of RobertaModel were not initialized from the model checkpoint at /mnt/zhaozc_workspace/project/LQH/RoBERTa and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading full checkpoint on CPU: exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=2-step=2418.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 509, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 2, 'global_step': 2418, 'steer_tensors': 42, 'gate_scale': 1.0}
+Starting FP32 inference: batch_size=3, scenes=1000
+3/1000, elapsed=13.1s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+75/1000, elapsed=76.1s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+150/1000, elapsed=137.6s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+225/1000, elapsed=203.1s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+300/1000, elapsed=270.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+375/1000, elapsed=339.4s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+450/1000, elapsed=408.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+525/1000, elapsed=470.7s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+600/1000, elapsed=533.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+675/1000, elapsed=596.6s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+750/1000, elapsed=663.3s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+825/1000, elapsed=733.6s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+900/1000, elapsed=797.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+975/1000, elapsed=861.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.43
+1000/1000, elapsed=884.0s, last_valid=True, batch_size=1, peak_allocated_gib=3.43
+{
+  "complete": true,
+  "full_navtest": false,
+  "expected_scenes": 1000,
+  "successful_scenes": 1000,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.988,
+    "drivable_area_compliance": 0.987,
+    "ego_progress": 0.8797867263184,
+    "time_to_collision_within_bound": 0.965,
+    "comfort": 1.0,
+    "driving_direction_compliance": 0.978,
+    "score": 0.9254013506440478
+  },
+  "pdms_percent": 92.54013506440478,
+  "checkpoint": "exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=2-step=2418.ckpt",
+  "batch_size": 3,
+  "text_mode": "correct",
+  "peak_allocated_bytes": 3677579264,
+  "note": "Only a complete full_navtest run is a full-set result."
+}
+Setup environment for CUDA
+Reading saved training config: exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   2%|▏         | 3/136 [00:00<00:05, 25.69it/s]Loading logs:   4%|▍         | 6/136 [00:00<00:04, 26.22it/s]Loading logs:   7%|▋         | 9/136 [00:00<00:04, 25.96it/s]Loading logs:   9%|▉         | 12/136 [00:00<00:06, 19.12it/s]Loading logs:  11%|█         | 15/136 [00:00<00:06, 17.74it/s]Loading logs:  14%|█▍        | 19/136 [00:00<00:05, 22.22it/s]Loading logs:  17%|█▋        | 23/136 [00:00<00:04, 25.42it/s]Loading logs:  19%|█▉        | 26/136 [00:01<00:04, 25.46it/s]Loading logs:  21%|██▏       | 29/136 [00:01<00:04, 25.55it/s]Loading logs:  24%|██▎       | 32/136 [00:01<00:04, 23.63it/s]Loading logs:  26%|██▌       | 35/136 [00:01<00:04, 23.24it/s]Loading logs:  28%|██▊       | 38/136 [00:01<00:05, 19.03it/s]Loading logs:  30%|███       | 41/136 [00:01<00:05, 18.38it/s]Loading logs:  32%|███▏      | 44/136 [00:02<00:04, 20.23it/s]Loading logs:  35%|███▍      | 47/136 [00:02<00:04, 21.87it/s]Loading logs:  37%|███▋      | 50/136 [00:02<00:03, 21.65it/s]Loading logs:  39%|███▉      | 53/136 [00:02<00:04, 19.13it/s]Loading logs:  42%|████▏     | 57/136 [00:02<00:03, 23.10it/s]Loading logs:  44%|████▍     | 60/136 [00:02<00:03, 23.20it/s]Loading logs:  46%|████▋     | 63/136 [00:02<00:03, 23.74it/s]Loading logs:  49%|████▊     | 66/136 [00:03<00:03, 17.82it/s]Loading logs:  51%|█████▏    | 70/136 [00:03<00:03, 20.83it/s]Loading logs:  54%|█████▎    | 73/136 [00:03<00:02, 22.05it/s]Loading logs:  56%|█████▌    | 76/136 [00:03<00:02, 23.51it/s]Loading logs:  58%|█████▊    | 79/136 [00:03<00:02, 21.20it/s]Loading logs:  60%|██████    | 82/136 [00:03<00:03, 14.95it/s]Loading logs:  62%|██████▎   | 85/136 [00:04<00:03, 16.18it/s]Loading logs:  64%|██████▍   | 87/136 [00:04<00:03, 16.05it/s]Loading logs:  65%|██████▌   | 89/136 [00:04<00:02, 16.53it/s]Loading logs:  68%|██████▊   | 92/136 [00:04<00:02, 19.27it/s]Loading logs:  70%|██████▉   | 95/136 [00:04<00:01, 21.33it/s]Loading logs:  72%|███████▏  | 98/136 [00:04<00:01, 19.15it/s]Loading logs:  74%|███████▍  | 101/136 [00:05<00:03, 11.23it/s]Loading logs:  76%|███████▋  | 104/136 [00:05<00:02, 13.72it/s]Loading logs:  79%|███████▊  | 107/136 [00:05<00:01, 15.69it/s]Loading logs:  81%|████████  | 110/136 [00:05<00:01, 16.14it/s]Loading logs:  84%|████████▍ | 114/136 [00:05<00:01, 19.29it/s]Loading logs:  86%|████████▌ | 117/136 [00:05<00:00, 19.60it/s]Loading logs:  88%|████████▊ | 120/136 [00:06<00:01, 14.25it/s]Loading logs:  90%|████████▉ | 122/136 [00:06<00:01, 13.63it/s]Loading logs:  92%|█████████▏| 125/136 [00:06<00:00, 15.69it/s]Loading logs:  93%|█████████▎| 127/136 [00:07<00:00,  9.93it/s]Loading logs:  96%|█████████▌| 130/136 [00:07<00:00, 12.66it/s]Loading logs:  98%|█████████▊| 133/136 [00:07<00:00, 15.42it/s]Loading logs: 100%|██████████| 136/136 [00:07<00:00, 12.65it/s]Loading logs: 100%|██████████| 136/136 [00:07<00:00, 17.85it/s]
+Inputs PASS: 1000/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_steer_navtest_empty_1gpu_b3_20261112T083937
+loading  timm/vit_base_patch14_dinov2.lvd142m
+/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of RobertaModel were not initialized from the model checkpoint at /mnt/zhaozc_workspace/project/LQH/RoBERTa and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading full checkpoint on CPU: exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=2-step=2418.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 509, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 2, 'global_step': 2418, 'steer_tensors': 42, 'gate_scale': 1.0}
+Starting FP32 inference: batch_size=3, scenes=1000
+3/1000, elapsed=8.4s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+75/1000, elapsed=68.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+150/1000, elapsed=134.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+225/1000, elapsed=201.2s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+300/1000, elapsed=264.6s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+375/1000, elapsed=327.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+450/1000, elapsed=391.7s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+525/1000, elapsed=457.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+600/1000, elapsed=522.6s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+675/1000, elapsed=588.1s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+750/1000, elapsed=655.4s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+825/1000, elapsed=721.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+900/1000, elapsed=788.9s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+975/1000, elapsed=854.5s, last_valid=True, batch_size=3, peak_allocated_gib=3.42
+1000/1000, elapsed=876.5s, last_valid=True, batch_size=1, peak_allocated_gib=3.42
+{
+  "complete": true,
+  "full_navtest": false,
+  "expected_scenes": 1000,
+  "successful_scenes": 1000,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.985,
+    "drivable_area_compliance": 0.982,
+    "ego_progress": 0.8910943368470078,
+    "time_to_collision_within_bound": 0.957,
+    "comfort": 1.0,
+    "driving_direction_compliance": 0.9795,
+    "score": 0.923167481903022
+  },
+  "pdms_percent": 92.3167481903022,
+  "checkpoint": "exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=2-step=2418.ckpt",
+  "batch_size": 3,
+  "text_mode": "empty",
+  "peak_allocated_bytes": 3674751488,
+  "note": "Only a complete full_navtest run is a full-set result."
+}
+Setup environment for CUDA
+Reading saved training config: exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   2%|▏         | 3/136 [00:00<00:04, 29.63it/s]Loading logs:   4%|▍         | 6/136 [00:00<00:06, 21.31it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:05, 21.70it/s]Loading logs:  10%|▉         | 13/136 [00:00<00:05, 21.38it/s]Loading logs:  12%|█▏        | 16/136 [00:00<00:05, 23.66it/s]Loading logs:  16%|█▌        | 22/136 [00:00<00:03, 33.48it/s]Loading logs:  20%|█▉        | 27/136 [00:00<00:03, 35.22it/s]Loading logs:  23%|██▎       | 31/136 [00:01<00:02, 35.03it/s]Loading logs:  26%|██▌       | 35/136 [00:01<00:02, 35.51it/s]Loading logs:  29%|██▊       | 39/136 [00:01<00:03, 29.75it/s]Loading logs:  32%|███▏      | 43/136 [00:01<00:03, 30.64it/s]Loading logs:  35%|███▌      | 48/136 [00:01<00:02, 35.15it/s]Loading logs:  38%|███▊      | 52/136 [00:01<00:02, 29.81it/s]Loading logs:  43%|████▎     | 58/136 [00:01<00:02, 35.25it/s]Loading logs:  46%|████▌     | 62/136 [00:01<00:02, 36.22it/s]Loading logs:  49%|████▊     | 66/136 [00:02<00:02, 29.11it/s]Loading logs:  52%|█████▏    | 71/136 [00:02<00:02, 30.43it/s]Loading logs:  56%|█████▌    | 76/136 [00:02<00:01, 33.59it/s]Loading logs:  59%|█████▉    | 80/136 [00:02<00:01, 29.69it/s]Loading logs:  62%|██████▏   | 84/136 [00:02<00:01, 29.75it/s]Loading logs:  65%|██████▍   | 88/136 [00:02<00:01, 24.49it/s]Loading logs:  68%|██████▊   | 92/136 [00:03<00:01, 27.07it/s]Loading logs:  71%|███████   | 96/136 [00:03<00:01, 28.57it/s]Loading logs:  74%|███████▎  | 100/136 [00:03<00:01, 21.84it/s]Loading logs:  76%|███████▌  | 103/136 [00:03<00:01, 21.93it/s]Loading logs:  79%|███████▉  | 108/136 [00:03<00:01, 24.71it/s]Loading logs:  83%|████████▎ | 113/136 [00:03<00:00, 27.40it/s]Loading logs:  85%|████████▌ | 116/136 [00:04<00:00, 26.91it/s]Loading logs:  88%|████████▊ | 119/136 [00:04<00:00, 26.07it/s]Loading logs:  90%|████████▉ | 122/136 [00:04<00:00, 15.42it/s]Loading logs:  92%|█████████▏| 125/136 [00:04<00:00, 17.35it/s]Loading logs:  94%|█████████▍| 128/136 [00:05<00:00, 13.52it/s]Loading logs:  97%|█████████▋| 132/136 [00:05<00:00, 17.45it/s]Loading logs:  99%|█████████▉| 135/136 [00:05<00:00, 14.47it/s]Loading logs: 100%|██████████| 136/136 [00:05<00:00, 24.75it/s]
+Inputs PASS: 1000/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/drivor_steer_navtest_none_1gpu_b3_20261112T085630
+loading  timm/vit_base_patch14_dinov2.lvd142m
+Loading full checkpoint on CPU: exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=3-step=3224.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 466, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 3, 'global_step': 3224}
+Starting FP32 inference: batch_size=3, scenes=1000
+3/1000, elapsed=4.9s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+75/1000, elapsed=57.8s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+150/1000, elapsed=117.7s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+225/1000, elapsed=179.1s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+300/1000, elapsed=237.9s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+375/1000, elapsed=297.7s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+450/1000, elapsed=357.2s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+525/1000, elapsed=416.3s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+600/1000, elapsed=473.1s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+675/1000, elapsed=529.9s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+750/1000, elapsed=587.8s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+825/1000, elapsed=647.4s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+900/1000, elapsed=709.3s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+975/1000, elapsed=769.3s, last_valid=True, batch_size=3, peak_allocated_gib=2.14
+1000/1000, elapsed=788.9s, last_valid=True, batch_size=1, peak_allocated_gib=2.14
+{
+  "complete": true,
+  "full_navtest": false,
+  "expected_scenes": 1000,
+  "successful_scenes": 1000,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.9755,
+    "drivable_area_compliance": 0.985,
+    "ego_progress": 0.8968502730348811,
+    "time_to_collision_within_bound": 0.939,
+    "comfort": 1.0,
+    "driving_direction_compliance": 0.9775,
+    "score": 0.9186311912668444
+  },
+  "pdms_percent": 91.86311912668444,
+  "checkpoint": "exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=3-step=3224.ckpt",
+  "batch_size": 3,
+  "text_mode": "correct",
+  "peak_allocated_bytes": 2298189824,
+  "note": "Only a complete full_navtest run is a full-set result."
+}

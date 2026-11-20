@@ -1,0 +1,18 @@
+nohup: ignoring input
+Thu Nov 12 16:44:15 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=3-step=3224.ckpt
+Thu Nov 12 17:40:42 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=4-step=4030.ckpt
+Thu Nov 12 18:16:49 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=4-step=4030.ckpt
+Thu Nov 12 19:06:55 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=5-step=4836.ckpt
+Thu Nov 12 19:48:58 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=5-step=4836.ckpt
+Thu Nov 12 20:31:02 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=6-step=5642.ckpt
+Thu Nov 12 21:21:05 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=6-step=5642.ckpt
+Thu Nov 12 21:57:08 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=7-step=6448.ckpt
+Thu Nov 12 22:53:12 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=7-step=6448.ckpt
+Thu Nov 12 23:23:15 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=8-step=7254.ckpt
+Fri Nov 13 00:25:19 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=8-step=7254.ckpt
+Fri Nov 13 00:49:21 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=9-step=8060.ckpt
+Fri Nov 13 01:57:25 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=9-step=8060.ckpt
+Fri Nov 13 02:15:27 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=10-step=8866.ckpt
+Fri Nov 13 03:29:32 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=10-step=8866.ckpt
+Fri Nov 13 03:41:33 CST 2026 copied exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=11-step=9672.ckpt
+Fri Nov 13 05:01:38 CST 2026 copied exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=11-step=9672.ckpt

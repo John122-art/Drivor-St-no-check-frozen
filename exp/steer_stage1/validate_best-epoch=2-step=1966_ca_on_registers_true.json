@@ -1,0 +1,7 @@
+{
+  "checkpoint": "exp/steer_stage1/checkpoints/best-epoch=2-step=1966.ckpt",
+  "ca_on_registers": true,
+  "val_samples": 3917,
+  "val/loss": 5.939156532287598,
+  "val/pmass": 0.843294084072113
+}

@@ -1,0 +1,55 @@
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/navsim/planning/script/config/common/agent/drivoR_steer.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   1%|          | 1/136 [00:00<00:15,  8.73it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:05, 24.60it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:04, 30.65it/s]Loading logs:  10%|█         | 14/136 [00:00<00:04, 27.86it/s]Loading logs:  13%|█▎        | 18/136 [00:00<00:05, 22.52it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:03, 32.38it/s]Loading logs:  22%|██▏       | 30/136 [00:01<00:03, 33.90it/s]Loading logs:  26%|██▌       | 35/136 [00:01<00:02, 36.21it/s]Loading logs:  29%|██▊       | 39/136 [00:01<00:02, 33.01it/s]Loading logs:  32%|███▏      | 43/136 [00:01<00:03, 23.28it/s]Loading logs:  35%|███▌      | 48/136 [00:01<00:03, 28.29it/s]Loading logs:  38%|███▊      | 52/136 [00:01<00:03, 27.91it/s]Loading logs:  43%|████▎     | 58/136 [00:01<00:02, 34.18it/s]Loading logs:  46%|████▋     | 63/136 [00:02<00:01, 36.92it/s]Loading logs:  50%|█████     | 68/136 [00:02<00:03, 20.61it/s]Loading logs:  54%|█████▎    | 73/136 [00:02<00:02, 25.01it/s]Loading logs:  57%|█████▋    | 78/136 [00:02<00:02, 28.70it/s]Loading logs:  60%|██████    | 82/136 [00:02<00:01, 28.90it/s]Loading logs:  63%|██████▎   | 86/136 [00:03<00:01, 28.49it/s]Loading logs:  66%|██████▌   | 90/136 [00:03<00:02, 18.59it/s]Loading logs:  70%|██████▉   | 95/136 [00:03<00:01, 22.64it/s]Loading logs:  73%|███████▎  | 99/136 [00:03<00:01, 22.52it/s]Loading logs:  75%|███████▌  | 102/136 [00:03<00:01, 19.60it/s]Loading logs:  79%|███████▉  | 108/136 [00:04<00:01, 25.38it/s]Loading logs:  83%|████████▎ | 113/136 [00:04<00:01, 17.09it/s]Loading logs:  85%|████████▌ | 116/136 [00:04<00:01, 18.76it/s]Loading logs:  88%|████████▊ | 120/136 [00:04<00:00, 21.42it/s]Loading logs:  90%|█████████ | 123/136 [00:04<00:00, 21.42it/s]Loading logs:  93%|█████████▎| 126/136 [00:05<00:00, 16.17it/s]Loading logs:  95%|█████████▍| 129/136 [00:05<00:00, 17.06it/s]Loading logs:  99%|█████████▊| 134/136 [00:05<00:00, 22.88it/s]Loading logs: 100%|██████████| 136/136 [00:06<00:00, 22.67it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1_best_navtest_1gpu_b28_20261116T015843
+loading  timm/vit_base_patch14_dinov2.lvd142m
+/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of RobertaModel were not initialized from the model checkpoint at /mnt/zhaozc_workspace/project/LQH/RoBERTa and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1/checkpoints/best-epoch=2-step=1966.ckpt
+Stage-1 frozen D verification PASS: 466 tensors
+Strict checkpoint load PASS: {'strict': True, 'keys': 509, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 2, 'global_step': 1966, 'steer_tensors': 42, 'gate_scale': 1.0, 'ca_on_registers': True}
+Starting FP32 inference: batch_size=28, scenes=12146
+28/12146, elapsed=34.8s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+700/12146, elapsed=538.0s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+1400/12146, elapsed=1025.0s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+2100/12146, elapsed=1532.8s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+2800/12146, elapsed=2020.8s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+3500/12146, elapsed=2516.5s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+4200/12146, elapsed=3002.0s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+4900/12146, elapsed=3494.1s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+5600/12146, elapsed=3993.2s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+6300/12146, elapsed=4487.2s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+7000/12146, elapsed=5004.3s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+7700/12146, elapsed=5509.0s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+8400/12146, elapsed=6012.1s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+9100/12146, elapsed=6569.4s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+9800/12146, elapsed=7154.1s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+10500/12146, elapsed=7737.7s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+11200/12146, elapsed=8412.5s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+11900/12146, elapsed=9007.1s, last_valid=True, batch_size=28, peak_allocated_gib=16.75
+12146/12146, elapsed=9228.7s, last_valid=True, batch_size=22, peak_allocated_gib=16.75
+{
+  "complete": true,
+  "full_navtest": true,
+  "expected_scenes": 12146,
+  "successful_scenes": 12146,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.7677013008397826,
+    "drivable_area_compliance": 0.5273341017618969,
+    "ego_progress": 0.37256139565222995,
+    "time_to_collision_within_bound": 0.6565124320764038,
+    "comfort": 0.9630330973159889,
+    "driving_direction_compliance": 0.6420632306932323,
+    "score": 0.39366858483922085
+  },
+  "pdms_percent": 39.36685848392209,
+  "checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1/checkpoints/best-epoch=2-step=1966.ckpt",
+  "batch_size": 28,
+  "text_mode": "correct",
+  "ca_on_registers": true,
+  "peak_allocated_bytes": 17990022656,
+  "note": "Only a complete full_navtest run is a full-set result."
+}

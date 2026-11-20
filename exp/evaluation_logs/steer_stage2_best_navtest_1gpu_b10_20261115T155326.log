@@ -1,0 +1,101 @@
+Setup environment for CUDA
+Steer stage2 full-navtest FP32 batch_size=10. Validating inputs and checkpoint on CPU: 2026-11-15 15:54:30 UTC
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:03, 41.88it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:04, 28.96it/s]Loading logs:  10%|█         | 14/136 [00:00<00:06, 20.19it/s]Loading logs:  14%|█▍        | 19/136 [00:00<00:04, 26.31it/s]Loading logs:  17%|█▋        | 23/136 [00:00<00:03, 28.72it/s]Loading logs:  20%|█▉        | 27/136 [00:00<00:03, 29.18it/s]Loading logs:  23%|██▎       | 31/136 [00:01<00:03, 30.20it/s]Loading logs:  26%|██▌       | 35/136 [00:01<00:03, 31.98it/s]Loading logs:  29%|██▊       | 39/136 [00:01<00:03, 26.65it/s]Loading logs:  32%|███▏      | 43/136 [00:01<00:03, 28.87it/s]Loading logs:  35%|███▍      | 47/136 [00:01<00:02, 30.82it/s]Loading logs:  38%|███▊      | 51/136 [00:01<00:02, 30.33it/s]Loading logs:  40%|████      | 55/136 [00:01<00:02, 27.52it/s]Loading logs:  43%|████▎     | 59/136 [00:02<00:02, 29.95it/s]Loading logs:  46%|████▋     | 63/136 [00:02<00:02, 29.53it/s]Loading logs:  49%|████▉     | 67/136 [00:02<00:02, 25.55it/s]Loading logs:  52%|█████▏    | 71/136 [00:02<00:02, 27.36it/s]Loading logs:  56%|█████▌    | 76/136 [00:02<00:01, 32.17it/s]Loading logs:  59%|█████▉    | 80/136 [00:03<00:03, 17.92it/s]Loading logs:  62%|██████▏   | 84/136 [00:03<00:02, 20.53it/s]Loading logs:  64%|██████▍   | 87/136 [00:03<00:02, 20.47it/s]Loading logs:  66%|██████▌   | 90/136 [00:03<00:02, 21.61it/s]Loading logs:  69%|██████▉   | 94/136 [00:03<00:01, 24.88it/s]Loading logs:  71%|███████▏  | 97/136 [00:03<00:01, 25.87it/s]Loading logs:  74%|███████▎  | 100/136 [00:04<00:02, 13.93it/s]Loading logs:  76%|███████▌  | 103/136 [00:04<00:02, 16.05it/s]Loading logs:  79%|███████▉  | 108/136 [00:04<00:01, 20.20it/s]Loading logs:  83%|████████▎ | 113/136 [00:04<00:00, 24.89it/s]Loading logs:  86%|████████▌ | 117/136 [00:04<00:00, 21.72it/s]Loading logs:  89%|████████▉ | 121/136 [00:04<00:00, 23.17it/s]Loading logs:  91%|█████████ | 124/136 [00:05<00:00, 22.18it/s]Loading logs:  93%|█████████▎| 127/136 [00:05<00:00, 10.68it/s]Loading logs:  96%|█████████▌| 130/136 [00:05<00:00, 12.89it/s]Loading logs:  98%|█████████▊| 133/136 [00:06<00:00, 14.95it/s]Loading logs: 100%|██████████| 136/136 [00:06<00:00, 22.31it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage2_best_navtest_1gpu_b10_20261115T155326_cpu_check
+loading  timm/vit_base_patch14_dinov2.lvd142m
+/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of RobertaModel were not initialized from the model checkpoint at /mnt/zhaozc_workspace/project/LQH/RoBERTa and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 509, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 11, 'global_step': 9672, 'steer_tensors': 42, 'gate_scale': 1.0, 'ca_on_registers': True}
+CPU validation passed. Waiting for capatch PID 90882 and D+ queue PID 490016; Steer stage2 runs after D+.
+Both preceding queue tasks exited. Starting Steer stage2 batch_size=10: 2026-11-15 19:15:20 UTC
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:04, 32.57it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:04, 29.22it/s]Loading logs:  10%|▉         | 13/136 [00:00<00:05, 24.34it/s]Loading logs:  12%|█▏        | 16/136 [00:00<00:04, 25.24it/s]Loading logs:  15%|█▌        | 21/136 [00:00<00:03, 32.09it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:03, 33.12it/s]Loading logs:  22%|██▏       | 30/136 [00:00<00:03, 32.06it/s]Loading logs:  25%|██▌       | 34/136 [00:01<00:03, 32.32it/s]Loading logs:  28%|██▊       | 38/136 [00:01<00:03, 26.60it/s]Loading logs:  30%|███       | 41/136 [00:01<00:03, 27.24it/s]Loading logs:  33%|███▎      | 45/136 [00:01<00:03, 29.30it/s]Loading logs:  37%|███▋      | 50/136 [00:01<00:02, 30.56it/s]Loading logs:  40%|███▉      | 54/136 [00:01<00:02, 28.33it/s]Loading logs:  43%|████▎     | 58/136 [00:01<00:02, 30.56it/s]Loading logs:  46%|████▌     | 62/136 [00:02<00:02, 27.71it/s]Loading logs:  48%|████▊     | 65/136 [00:02<00:02, 27.49it/s]Loading logs:  50%|█████     | 68/136 [00:02<00:03, 21.02it/s]Loading logs:  52%|█████▏    | 71/136 [00:02<00:03, 20.41it/s]Loading logs:  56%|█████▌    | 76/136 [00:02<00:02, 25.19it/s]Loading logs:  59%|█████▉    | 80/136 [00:03<00:03, 16.97it/s]Loading logs:  61%|██████    | 83/136 [00:03<00:02, 18.63it/s]Loading logs:  63%|██████▎   | 86/136 [00:03<00:02, 19.17it/s]Loading logs:  66%|██████▌   | 90/136 [00:03<00:02, 22.82it/s]Loading logs:  69%|██████▉   | 94/136 [00:03<00:01, 25.98it/s]Loading logs:  71%|███████▏  | 97/136 [00:03<00:01, 22.73it/s]Loading logs:  74%|███████▎  | 100/136 [00:04<00:02, 12.56it/s]Loading logs:  76%|███████▌  | 103/136 [00:04<00:02, 14.72it/s]Loading logs:  79%|███████▉  | 108/136 [00:04<00:01, 18.13it/s]Loading logs:  83%|████████▎ | 113/136 [00:04<00:01, 22.95it/s]Loading logs:  85%|████████▌ | 116/136 [00:04<00:00, 22.31it/s]Loading logs:  88%|████████▊ | 120/136 [00:05<00:00, 24.79it/s]Loading logs:  90%|█████████ | 123/136 [00:05<00:00, 23.59it/s]Loading logs:  93%|█████████▎| 126/136 [00:05<00:00, 10.69it/s]Loading logs:  94%|█████████▍| 128/136 [00:06<00:00, 11.43it/s]Loading logs:  98%|█████████▊| 133/136 [00:06<00:00, 16.19it/s]Loading logs: 100%|██████████| 136/136 [00:06<00:00, 21.83it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage2_best_navtest_1gpu_b10_20261115T155326
+loading  timm/vit_base_patch14_dinov2.lvd142m
+/mnt/zhaozc_workspace/envs/drivorpython/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Some weights of RobertaModel were not initialized from the model checkpoint at /mnt/zhaozc_workspace/project/LQH/RoBERTa and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 509, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 11, 'global_step': 9672, 'steer_tensors': 42, 'gate_scale': 1.0, 'ca_on_registers': True}
+Starting FP32 inference: batch_size=10, scenes=12146
+10/12146, elapsed=15.0s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+250/12146, elapsed=178.3s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+500/12146, elapsed=352.7s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+750/12146, elapsed=523.9s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+1000/12146, elapsed=691.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+1250/12146, elapsed=860.8s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+1500/12146, elapsed=1031.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+1750/12146, elapsed=1196.8s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+2000/12146, elapsed=1360.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+2250/12146, elapsed=1531.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+2500/12146, elapsed=1714.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+2750/12146, elapsed=1880.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+3000/12146, elapsed=2048.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+3250/12146, elapsed=2215.6s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+3500/12146, elapsed=2381.9s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+3750/12146, elapsed=2554.6s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+4000/12146, elapsed=2726.9s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+4250/12146, elapsed=2896.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+4500/12146, elapsed=3063.8s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+4750/12146, elapsed=3232.2s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+5000/12146, elapsed=3400.0s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+5250/12146, elapsed=3564.3s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+5500/12146, elapsed=3735.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+5750/12146, elapsed=3902.2s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+6000/12146, elapsed=4068.2s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+6250/12146, elapsed=4243.0s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+6500/12146, elapsed=4420.8s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+6750/12146, elapsed=4585.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+7000/12146, elapsed=4752.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+7250/12146, elapsed=4918.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+7500/12146, elapsed=5092.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+7750/12146, elapsed=5255.6s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+8000/12146, elapsed=5419.7s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+8250/12146, elapsed=5596.8s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+8500/12146, elapsed=5762.6s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+8750/12146, elapsed=5930.9s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+9000/12146, elapsed=6103.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+9250/12146, elapsed=6269.2s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+9500/12146, elapsed=6437.1s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+9750/12146, elapsed=6608.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+10000/12146, elapsed=6778.6s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+10250/12146, elapsed=6956.7s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+10500/12146, elapsed=7125.3s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+10750/12146, elapsed=7287.3s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+11000/12146, elapsed=7457.4s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+11250/12146, elapsed=7626.9s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+11500/12146, elapsed=7795.3s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+11750/12146, elapsed=7975.0s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+12000/12146, elapsed=8142.5s, last_valid=True, batch_size=10, peak_allocated_gib=7.16
+12146/12146, elapsed=8245.9s, last_valid=True, batch_size=6, peak_allocated_gib=7.16
+{
+  "complete": true,
+  "full_navtest": true,
+  "expected_scenes": 12146,
+  "successful_scenes": 12146,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.9888440638893463,
+    "drivable_area_compliance": 0.9843569899555409,
+    "ego_progress": 0.8975628316509683,
+    "time_to_collision_within_bound": 0.9625391075251112,
+    "comfort": 0.9999176683681871,
+    "driving_direction_compliance": 0.9730363905812613,
+    "score": 0.9309361821005158
+  },
+  "pdms_percent": 93.09361821005157,
+  "checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt",
+  "batch_size": 10,
+  "text_mode": "correct",
+  "ca_on_registers": true,
+  "peak_allocated_bytes": 7686474752,
+  "note": "Only a complete full_navtest run is a full-set result."
+}
+Steer stage2 evaluation complete: 2026-11-15 21:33:56 UTC

@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "model_name": "timm/vit_base_patch14_dinov2.lvd142m",
+  "local_weight_file": "/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors",
+  "create_model_calls": [
+    {
+      "name": "timm/vit_base_patch14_dinov2.lvd142m",
+      "file": "/mnt/zhaozc_workspace/project/LQH/DINVO2_SteerViT/model.safetensors"
+    }
+  ],
+  "strict_loads": [
+    {
+      "strict": true,
+      "loaded_keys": 174,
+      "missing_keys": [],
+      "unexpected_keys": []
+    }
+  ],
+  "fallback_used": false,
+  "all_12_block_qkv_equal_local_weights": true,
+  "transformer_blocks": 12,
+  "attention_heads": 12,
+  "feature_dim": 768,
+  "patch_size": [
+    14,
+    14
+  ],
+  "native_prefix_tokens": 1,
+  "register_weights_present": false,
+  "lora_rank": 32,
+  "neck_in_out": [
+    768,
+    256
+  ],
+  "device_name": "PPU-ZW810E",
+  "device_count": 1,
+  "launcher_batch_per_device": 16,
+  "launcher_devices": 8,
+  "test_batch": 1,
+  "synthetic_input_shape": [
+    1,
+    4,
+    3,
+    672,
+    1148
+  ],
+  "encoder_output_shape": [
+    [
+      1,
+      64,
+      256
+    ]
+  ],
+  "forward_seconds": 13.232697972998722,
+  "outputs": {
+    "proposals": [
+      1,
+      64,
+      8,
+      3
+    ],
+    "trajectory": [
+      1,
+      8,
+      3
+    ],
+    "pdm_score": [
+      1,
+      64
+    ]
+  },
+  "outputs_finite": {
+    "proposals": true,
+    "trajectory": true,
+    "pdm_score": true
+  },
+  "peak_allocated_mib": 826.17822265625,
+  "scope": "Exact launcher config and local checkpoint audit; native full model synthetic forward on one PPU; no backward or training"
+}

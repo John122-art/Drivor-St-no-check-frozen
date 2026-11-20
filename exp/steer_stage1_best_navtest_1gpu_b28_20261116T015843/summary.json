@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "full_navtest": true,
+  "expected_scenes": 12146,
+  "successful_scenes": 12146,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.7677013008397826,
+    "drivable_area_compliance": 0.5273341017618969,
+    "ego_progress": 0.37256139565222995,
+    "time_to_collision_within_bound": 0.6565124320764038,
+    "comfort": 0.9630330973159889,
+    "driving_direction_compliance": 0.6420632306932323,
+    "score": 0.39366858483922085
+  },
+  "pdms_percent": 39.36685848392209,
+  "checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/steer_stage1/checkpoints/best-epoch=2-step=1966.ckpt",
+  "batch_size": 28,
+  "text_mode": "correct",
+  "ca_on_registers": true,
+  "peak_allocated_bytes": 17990022656,
+  "note": "Only a complete full_navtest run is a full-set result."
+}

@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "full_navtest": false,
+  "expected_scenes": 1000,
+  "successful_scenes": 1000,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.9755,
+    "drivable_area_compliance": 0.985,
+    "ego_progress": 0.8968502730348811,
+    "time_to_collision_within_bound": 0.939,
+    "comfort": 1.0,
+    "driving_direction_compliance": 0.9775,
+    "score": 0.9186311912668444
+  },
+  "pdms_percent": 91.86311912668444,
+  "checkpoint": "exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=3-step=3224.ckpt",
+  "batch_size": 3,
+  "text_mode": "correct",
+  "peak_allocated_bytes": 2298189824,
+  "note": "Only a complete full_navtest run is a full-set result."
+}

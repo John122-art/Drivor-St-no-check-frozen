@@ -1,0 +1,93 @@
+Setup environment for CUDA
+D+ full-navtest FP32 batch_size=10. Validating inputs and checkpoint on CPU: 2026-11-15 15:49:29 UTC
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:03, 42.90it/s]Loading logs:   7%|▋         | 10/136 [00:00<00:03, 36.57it/s]Loading logs:  10%|█         | 14/136 [00:00<00:03, 31.65it/s]Loading logs:  13%|█▎        | 18/136 [00:00<00:03, 33.75it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:02, 42.33it/s]Loading logs:  23%|██▎       | 31/136 [00:00<00:02, 43.43it/s]Loading logs:  26%|██▋       | 36/136 [00:00<00:02, 38.02it/s]Loading logs:  30%|███       | 41/136 [00:01<00:02, 39.06it/s]Loading logs:  34%|███▍      | 46/136 [00:01<00:02, 41.08it/s]Loading logs:  38%|███▊      | 51/136 [00:01<00:02, 38.77it/s]Loading logs:  41%|████      | 56/136 [00:01<00:01, 40.61it/s]Loading logs:  45%|████▍     | 61/136 [00:01<00:01, 42.24it/s]Loading logs:  49%|████▊     | 66/136 [00:01<00:02, 34.41it/s]Loading logs:  52%|█████▏    | 71/136 [00:01<00:01, 37.14it/s]Loading logs:  57%|█████▋    | 78/136 [00:01<00:01, 44.32it/s]Loading logs:  61%|██████    | 83/136 [00:02<00:01, 41.59it/s]Loading logs:  65%|██████▍   | 88/136 [00:02<00:01, 37.84it/s]Loading logs:  70%|██████▉   | 95/136 [00:02<00:00, 42.80it/s]Loading logs:  74%|███████▎  | 100/136 [00:02<00:01, 31.05it/s]Loading logs:  76%|███████▋  | 104/136 [00:02<00:01, 31.23it/s]Loading logs:  79%|███████▉  | 108/136 [00:02<00:00, 31.65it/s]Loading logs:  84%|████████▍ | 114/136 [00:03<00:00, 36.95it/s]Loading logs:  88%|████████▊ | 119/136 [00:03<00:00, 20.29it/s]Loading logs:  90%|█████████ | 123/136 [00:03<00:00, 21.14it/s]Loading logs:  93%|█████████▎| 126/136 [00:03<00:00, 17.59it/s]Loading logs:  95%|█████████▍| 129/136 [00:04<00:00, 18.79it/s]Loading logs:  99%|█████████▊| 134/136 [00:04<00:00, 24.16it/s]Loading logs: 100%|██████████| 136/136 [00:04<00:00, 32.14it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/dplus_best_navtest_1gpu_b10_20261115T154810_cpu_check
+loading  timm/vit_base_patch14_dinov2.lvd142m
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 466, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 11, 'global_step': 9672}
+CPU validation passed. Waiting for Steer-DrivoR PID 90882 to release the single GPU.
+Previous evaluation exited. Starting D+ batch_size=10: 2026-11-15 16:57:55 UTC
+Reading saved training config: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/code/hydra/config.yaml
+Checking 12146 navtest metric paths
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   4%|▍         | 6/136 [00:00<00:02, 53.17it/s]Loading logs:   9%|▉         | 12/136 [00:00<00:03, 38.60it/s]Loading logs:  12%|█▎        | 17/136 [00:00<00:03, 37.47it/s]Loading logs:  19%|█▉        | 26/136 [00:00<00:02, 48.04it/s]Loading logs:  23%|██▎       | 31/136 [00:00<00:02, 47.46it/s]Loading logs:  26%|██▋       | 36/136 [00:00<00:02, 42.74it/s]Loading logs:  30%|███       | 41/136 [00:00<00:02, 40.62it/s]Loading logs:  34%|███▍      | 46/136 [00:01<00:02, 41.10it/s]Loading logs:  38%|███▊      | 51/136 [00:01<00:02, 40.07it/s]Loading logs:  41%|████      | 56/136 [00:01<00:01, 40.18it/s]Loading logs:  46%|████▌     | 62/136 [00:01<00:01, 42.61it/s]Loading logs:  49%|████▉     | 67/136 [00:01<00:01, 34.70it/s]Loading logs:  54%|█████▍    | 74/136 [00:01<00:01, 41.70it/s]Loading logs:  58%|█████▊    | 79/136 [00:01<00:01, 41.94it/s]Loading logs:  62%|██████▏   | 84/136 [00:02<00:01, 37.81it/s]Loading logs:  65%|██████▌   | 89/136 [00:02<00:01, 34.81it/s]Loading logs:  70%|██████▉   | 95/136 [00:02<00:01, 39.19it/s]Loading logs:  74%|███████▎  | 100/136 [00:02<00:01, 29.26it/s]Loading logs:  77%|███████▋  | 105/136 [00:02<00:00, 32.64it/s]Loading logs:  81%|████████  | 110/136 [00:02<00:00, 35.97it/s]Loading logs:  85%|████████▌ | 116/136 [00:02<00:00, 40.26it/s]Loading logs:  89%|████████▉ | 121/136 [00:03<00:00, 21.93it/s]Loading logs:  92%|█████████▏| 125/136 [00:03<00:00, 24.00it/s]Loading logs:  95%|█████████▍| 129/136 [00:03<00:00, 19.89it/s]Loading logs: 100%|██████████| 136/136 [00:03<00:00, 27.55it/s]Loading logs: 100%|██████████| 136/136 [00:03<00:00, 34.24it/s]
+Inputs PASS: 12146/12146 scenes; output=/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/dplus_best_navtest_1gpu_b10_20261115T154810
+loading  timm/vit_base_patch14_dinov2.lvd142m
+Loading full checkpoint on CPU: /mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt
+Strict checkpoint load PASS: {'strict': True, 'keys': 466, 'missing_keys': [], 'unexpected_keys': [], 'epoch': 11, 'global_step': 9672}
+Starting FP32 inference: batch_size=10, scenes=12146
+10/12146, elapsed=8.3s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+250/12146, elapsed=173.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+500/12146, elapsed=330.3s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+750/12146, elapsed=492.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+1000/12146, elapsed=659.4s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+1250/12146, elapsed=828.6s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+1500/12146, elapsed=999.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+1750/12146, elapsed=1167.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+2000/12146, elapsed=1330.4s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+2250/12146, elapsed=1501.4s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+2500/12146, elapsed=1663.2s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+2750/12146, elapsed=1837.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+3000/12146, elapsed=2011.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+3250/12146, elapsed=2177.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+3500/12146, elapsed=2347.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+3750/12146, elapsed=2511.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+4000/12146, elapsed=2675.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+4250/12146, elapsed=2843.8s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+4500/12146, elapsed=3005.9s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+4750/12146, elapsed=3179.9s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+5000/12146, elapsed=3357.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+5250/12146, elapsed=3524.3s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+5500/12146, elapsed=3692.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+5750/12146, elapsed=3854.3s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+6000/12146, elapsed=4019.2s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+6250/12146, elapsed=4180.2s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+6500/12146, elapsed=4348.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+6750/12146, elapsed=4519.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+7000/12146, elapsed=4680.2s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+7250/12146, elapsed=4854.4s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+7500/12146, elapsed=5026.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+7750/12146, elapsed=5196.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+8000/12146, elapsed=5363.8s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+8250/12146, elapsed=5530.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+8500/12146, elapsed=5694.7s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+8750/12146, elapsed=5868.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+9000/12146, elapsed=6034.2s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+9250/12146, elapsed=6199.6s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+9500/12146, elapsed=6372.6s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+9750/12146, elapsed=6545.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+10000/12146, elapsed=6712.8s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+10250/12146, elapsed=6880.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+10500/12146, elapsed=7045.8s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+10750/12146, elapsed=7216.1s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+11000/12146, elapsed=7387.7s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+11250/12146, elapsed=7564.5s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+11500/12146, elapsed=7737.0s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+11750/12146, elapsed=7897.8s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+12000/12146, elapsed=8065.3s, last_valid=True, batch_size=10, peak_allocated_gib=6.19
+12146/12146, elapsed=8162.1s, last_valid=True, batch_size=6, peak_allocated_gib=6.19
+{
+  "complete": true,
+  "full_navtest": true,
+  "expected_scenes": 12146,
+  "successful_scenes": 12146,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.9824221966079367,
+    "drivable_area_compliance": 0.9826280256874691,
+    "ego_progress": 0.9091295269208653,
+    "time_to_collision_within_bound": 0.9417915363082496,
+    "comfort": 0.9998353367363741,
+    "driving_direction_compliance": 0.9743948625061749,
+    "score": 0.9253267196166398
+  },
+  "pdms_percent": 92.53267196166398,
+  "checkpoint": "/mnt/zhaozc_workspace/project/LQH/Drivor-orial/DrivoR-main/exp/ke/dplus_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/version_0/checkpoints/best-epoch=11-step=9672.ckpt",
+  "batch_size": 10,
+  "text_mode": "none (D+)",
+  "ca_on_registers": null,
+  "peak_allocated_bytes": 6641831424,
+  "note": "Only a complete full_navtest run is a full-set result."
+}
+D+ evaluation complete: 2026-11-15 19:15:02 UTC

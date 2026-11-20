@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "full_navtest": false,
+  "expected_scenes": 1000,
+  "successful_scenes": 1000,
+  "failed_scenes": 0,
+  "averages_of_valid_scenes": {
+    "no_at_fault_collisions": 0.985,
+    "drivable_area_compliance": 0.982,
+    "ego_progress": 0.8910943368470078,
+    "time_to_collision_within_bound": 0.957,
+    "comfort": 1.0,
+    "driving_direction_compliance": 0.9795,
+    "score": 0.923167481903022
+  },
+  "pdms_percent": 92.3167481903022,
+  "checkpoint": "exp/ke/steer_stage2_vitb_8gpu_b16_12ep/11.12_10.30/lightning_logs/keep_ckpts/checkpoints/epoch=2-step=2418.ckpt",
+  "batch_size": 3,
+  "text_mode": "empty",
+  "peak_allocated_bytes": 3674751488,
+  "note": "Only a complete full_navtest run is a full-set result."
+}
